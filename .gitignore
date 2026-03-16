@@ -39,3 +39,10 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Dev-only / AI tooling
+CLAUDE.md
+task_notes/
+scripts/
+level_design_pack/
+IMAGE_PROMPTS.md

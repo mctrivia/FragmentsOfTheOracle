@@ -7,6 +7,7 @@ import {
   Animated,
   Dimensions,
   Image,
+  ScrollView,
 } from 'react-native';
 import type { ProphecyCheckConfig, Passage } from '../../types';
 import { colors, fonts, spacing } from '../../theme';
@@ -33,6 +34,7 @@ export function ProphecyCheckPuzzle({ config, passage, onComplete }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [sorted, setSorted] = useState<SortedItem[]>([]);
   const [showVerdict, setShowVerdict] = useState(false);
+  const [failed, setFailed] = useState(false);
 
   const slideAnim = useRef(new Animated.Value(SCREEN_WIDTH)).current;
   const exitAnim = useRef(new Animated.Value(0)).current;
@@ -41,6 +43,14 @@ export function ProphecyCheckPuzzle({ config, passage, onComplete }: Props) {
   const evidence = config.evidence;
   const currentCard = currentIndex < evidence.length ? evidence[currentIndex] : null;
 
+  const handleRetry = useCallback(() => {
+    setCurrentIndex(0);
+    setSorted([]);
+    setShowVerdict(false);
+    setFailed(false);
+    verdictAnim.setValue(0);
+  }, [verdictAnim]);
+
   const supportsCount = useMemo(
     () => sorted.filter((s) => s.playerChoice === 'supports').length,
     [sorted],
@@ -48,6 +58,11 @@ export function ProphecyCheckPuzzle({ config, passage, onComplete }: Props) {
   const contradictsCount = useMemo(
     () => sorted.filter((s) => s.playerChoice === 'contradicts').length,
     [sorted],
+  );
+
+  // Did the player correctly identify at least one contradicting evidence?
+  const hasCorrectContradict = sorted.some(
+    (s) => s.playerChoice === 'contradicts' && s.actualCategory === 'contradicts',
   );
 
   // Slide in the current card
@@ -73,12 +88,16 @@ export function ProphecyCheckPuzzle({ config, passage, onComplete }: Props) {
         useNativeDriver: true,
       }).start();
 
-      const timer = setTimeout(() => {
-        onComplete();
-      }, 4000);
-      return () => clearTimeout(timer);
+      if (hasCorrectContradict) {
+        const timer = setTimeout(() => {
+          onComplete();
+        }, 4000);
+        return () => clearTimeout(timer);
+      } else {
+        setFailed(true);
+      }
     }
-  }, [sorted.length, evidence.length]);
+  }, [sorted.length, evidence.length, hasCorrectContradict]);
 
   const handleSort = useCallback(
     (choice: 'supports' | 'contradicts') => {
@@ -109,10 +128,11 @@ export function ProphecyCheckPuzzle({ config, passage, onComplete }: Props) {
     [currentCard, exitAnim],
   );
 
-  const actualSupports = evidence.filter((e) => e.category === 'supports').length;
-  const actualContradicts = evidence.filter((e) => e.category === 'contradicts').length;
-  const totalEvidence = evidence.length;
-  const contradictsRatio = totalEvidence > 0 ? actualContradicts / totalEvidence : 0;
+  // Player's picks for the verdict display
+  const playerSupports = sorted.filter((s) => s.playerChoice === 'supports').length;
+  const playerContradicts = sorted.filter((s) => s.playerChoice === 'contradicts').length;
+  const playerContradictsRatio =
+    sorted.length > 0 ? playerContradicts / sorted.length : 0;
 
   return (
     <View style={styles.container}>
@@ -173,7 +193,7 @@ export function ProphecyCheckPuzzle({ config, passage, onComplete }: Props) {
       </View>
 
       {/* Card area */}
-      <View style={styles.cardArea}>
+      <View style={[styles.cardArea, showVerdict && { justifyContent: 'flex-start' }]}>
         {currentCard && !showVerdict && (
           <Animated.View
             style={[
@@ -214,36 +234,64 @@ export function ProphecyCheckPuzzle({ config, passage, onComplete }: Props) {
         {/* Verdict summary */}
         {showVerdict && (
           <Animated.View style={[styles.verdictContainer, { opacity: verdictAnim }]}>
-            <Text style={styles.verdictTitle}>Evidence Summary</Text>
+            <Text style={styles.verdictTitle}>
+              {failed ? 'Review Your Choices' : 'Evidence Summary'}
+            </Text>
 
+            {/* Your picks */}
             <View style={styles.verdictCounts}>
               <View style={styles.verdictCountBox}>
                 <Text style={[styles.verdictCountNum, { color: colors.success }]}>
-                  {actualSupports}
+                  {playerSupports}
                 </Text>
-                <Text style={styles.verdictCountLabel}>Supporting</Text>
+                <Text style={styles.verdictCountLabel}>You said supports</Text>
               </View>
               <Text style={styles.verdictVs}>vs</Text>
               <View style={styles.verdictCountBox}>
                 <Text style={[styles.verdictCountNum, { color: colors.error }]}>
-                  {actualContradicts}
+                  {playerContradicts}
                 </Text>
-                <Text style={styles.verdictCountLabel}>Contradicting</Text>
+                <Text style={styles.verdictCountLabel}>You said contradicts</Text>
               </View>
             </View>
 
-            {/* Gauge bar */}
+            {/* Evidence breakdown showing player's choices */}
+            <View style={styles.evidenceList}>
+              {sorted.map((item) => (
+                <View key={item.id} style={styles.evidenceRow}>
+                  <Text style={styles.evidenceIcon}>
+                    {item.correct ? '\u2713' : '\u2717'}
+                  </Text>
+                  <View style={styles.evidenceInfo}>
+                    <Text style={styles.evidenceItemText} numberOfLines={2}>
+                      {item.text}
+                    </Text>
+                    <Text
+                      style={[
+                        styles.evidenceChoice,
+                        { color: item.correct ? colors.success : colors.error },
+                      ]}
+                    >
+                      You: {item.playerChoice}
+                      {!item.correct ? ` (actually ${item.actualCategory})` : ''}
+                    </Text>
+                  </View>
+                </View>
+              ))}
+            </View>
+
+            {/* Gauge bar based on player's picks */}
             <View style={styles.gaugeTrack}>
               <View
                 style={[
                   styles.gaugeSupports,
-                  { flex: actualSupports || 0.1 },
+                  { flex: playerSupports || 0.1 },
                 ]}
               />
               <View
                 style={[
                   styles.gaugeContradicts,
-                  { flex: actualContradicts || 0.1 },
+                  { flex: playerContradicts || 0.1 },
                 ]}
               />
             </View>
@@ -256,15 +304,38 @@ export function ProphecyCheckPuzzle({ config, passage, onComplete }: Props) {
               </Text>
             </View>
 
-            <Image
-              source={contradictsRatio > 0.5 ? images.verdict.unfulfilled : images.verdict.fulfilled}
-              style={styles.verdictStamp}
-              resizeMode="contain"
-            />
-            <View style={styles.verdictLine} />
-            <Text style={styles.verdictText}>
-              The evidence weighs against fulfillment.
-            </Text>
+            {failed ? (
+              <>
+                <Text style={styles.failText}>
+                  Look more carefully — some of this evidence clearly contradicts the requirement.
+                </Text>
+                <TouchableOpacity
+                  style={styles.retryBtn}
+                  onPress={handleRetry}
+                  activeOpacity={0.7}
+                >
+                  <Text style={styles.retryBtnText}>Try Again</Text>
+                </TouchableOpacity>
+              </>
+            ) : (
+              <>
+                <Image
+                  source={
+                    playerContradictsRatio > 0.5
+                      ? images.verdict.unfulfilled
+                      : images.verdict.fulfilled
+                  }
+                  style={styles.verdictStamp}
+                  resizeMode="contain"
+                />
+                <View style={styles.verdictLine} />
+                <Text style={styles.verdictText}>
+                  {playerContradictsRatio > 0.5
+                    ? 'The evidence weighs against fulfillment.'
+                    : 'The evidence leans toward fulfillment.'}
+                </Text>
+              </>
+            )}
           </Animated.View>
         )}
       </View>
@@ -504,5 +575,57 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
     color: colors.accent,
     lineHeight: 24,
+  },
+  evidenceList: {
+    width: '100%',
+    marginBottom: spacing.md,
+  },
+  evidenceRow: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    paddingVertical: spacing.xs,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: colors.surfaceLight,
+  },
+  evidenceIcon: {
+    fontSize: 16,
+    fontWeight: '700',
+    width: 24,
+    textAlign: 'center',
+    marginTop: 2,
+    color: colors.text,
+  },
+  evidenceInfo: {
+    flex: 1,
+  },
+  evidenceItemText: {
+    ...fonts.caption,
+    color: colors.text,
+    lineHeight: 18,
+  },
+  evidenceChoice: {
+    ...fonts.caption,
+    fontSize: 11,
+    marginTop: 2,
+  },
+  failText: {
+    ...fonts.body,
+    textAlign: 'center',
+    color: colors.error,
+    marginBottom: spacing.md,
+    lineHeight: 22,
+  },
+  retryBtn: {
+    backgroundColor: '#4a2a2a',
+    borderWidth: 1,
+    borderColor: colors.error,
+    paddingVertical: spacing.sm,
+    paddingHorizontal: spacing.xl,
+    borderRadius: 8,
+  },
+  retryBtnText: {
+    ...fonts.button,
+    color: colors.text,
+    fontWeight: '600',
   },
 });

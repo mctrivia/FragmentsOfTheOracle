@@ -1,0 +1,98 @@
+[
+  {
+    "id": "intro_01",
+    "speaker": "Archivist",
+    "text": "The ink is damaged. Piece it together carefully — the order matters more than you might think.",
+    "mood": "calm"
+  },
+  {
+    "id": "intro_02",
+    "speaker": "Historian",
+    "text": "A text makes more sense when you know who first heard it, and what crisis they were facing.",
+    "mood": "reflective"
+  },
+  {
+    "id": "intro_03",
+    "speaker": "Linguist",
+    "text": "One word can tilt a whole reading. Pay attention to what the original language actually says.",
+    "mood": "precise"
+  },
+  {
+    "id": "intro_04",
+    "speaker": "Historian",
+    "text": "These titles sound cosmic, but ancient kings received names like these at every coronation. Context changes everything.",
+    "mood": "reflective"
+  },
+  {
+    "id": "intro_05",
+    "speaker": "Archivist",
+    "text": "This child was a sign for a king at war, not a message in a bottle for a distant century.",
+    "mood": "calm"
+  },
+  {
+    "id": "intro_06",
+    "speaker": "Historian",
+    "text": "Israel is called God's son more than once in the prophets. Read the surrounding verses.",
+    "mood": "reflective"
+  },
+  {
+    "id": "intro_07",
+    "speaker": "Linguist",
+    "text": "Poetry gives suffering a shape. That does not make it a blueprint for a future event.",
+    "mood": "precise"
+  },
+  {
+    "id": "intro_08",
+    "speaker": "Historian",
+    "text": "Ephrathah is a clan name. The text is about lineage and roots, not a postal address.",
+    "mood": "reflective"
+  },
+  {
+    "id": "intro_09",
+    "speaker": "Linguist",
+    "text": "The translator made a choice. The original author used a different word. Which one should you trust?",
+    "mood": "precise"
+  },
+  {
+    "id": "reveal_01",
+    "speaker": "Curator",
+    "text": "Now step back. See how each line was taken from its home and given a new address. The pattern is not in the texts — it was imposed on them.",
+    "mood": "mysterious"
+  },
+  {
+    "id": "intro_10",
+    "speaker": "Curator",
+    "text": "You've seen how the texts were reframed. Now ask: what was the messiah actually supposed to do?",
+    "mood": "mysterious"
+  },
+  {
+    "id": "intro_11",
+    "speaker": "Historian",
+    "text": "A promise of world peace is not a metaphor. Read what the prophets actually required.",
+    "mood": "reflective"
+  },
+  {
+    "id": "intro_12",
+    "speaker": "Historian",
+    "text": "The messiah gathers the scattered. Did the scattering stop — or get worse?",
+    "mood": "reflective"
+  },
+  {
+    "id": "intro_13",
+    "speaker": "Archivist",
+    "text": "An everlasting sanctuary means one that lasts forever. Check the historical record.",
+    "mood": "calm"
+  },
+  {
+    "id": "intro_14",
+    "speaker": "Linguist",
+    "text": "A lineage traced through a father who is not the biological father. Follow the logic carefully.",
+    "mood": "precise"
+  },
+  {
+    "id": "reveal_02",
+    "speaker": "Curator",
+    "text": "The archive is complete. Every claimed prophecy was taken from its home. Every actual requirement went unfulfilled. The conclusion is yours to draw.",
+    "mood": "mysterious"
+  }
+]

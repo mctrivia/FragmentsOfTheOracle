@@ -1,0 +1,37 @@
+[
+  {
+    "id": "hall_of_kings",
+    "title": "Hall of Kings",
+    "description": "Royal psalms, coronation hymns, and court poetry from the Davidic dynasty.",
+    "requiredKeys": 0,
+    "theme": "royal_archive"
+  },
+  {
+    "id": "prophets_gallery",
+    "title": "Prophets Gallery",
+    "description": "Crisis texts, political signs, and prophetic oracles rooted in specific historical moments.",
+    "requiredKeys": 1,
+    "theme": "prophetic_archive"
+  },
+  {
+    "id": "exile_records",
+    "title": "Exile Records",
+    "description": "National memory, deportation laments, and symbolic visions of restoration.",
+    "requiredKeys": 2,
+    "theme": "exilic_archive"
+  },
+  {
+    "id": "interpretation_wing",
+    "title": "Interpretation Wing",
+    "description": "Where original contexts meet later reuses. The pattern reveals itself here.",
+    "requiredKeys": 0,
+    "theme": "interpretive_archive"
+  },
+  {
+    "id": "messianic_hall",
+    "title": "Hall of Expectations",
+    "description": "What the prophets actually required of the messiah — and whether any of it came to pass.",
+    "requiredKeys": 0,
+    "theme": "messianic_archive"
+  }
+]

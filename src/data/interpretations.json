@@ -1,0 +1,114 @@
+[
+  {
+    "id": "interp_original_isaiah7",
+    "passageId": "passage_child_sign",
+    "label": "Original: Sign for King Ahaz",
+    "summary": "Isaiah addresses King Ahaz directly during the Syro-Ephraimite crisis of 735 BCE. The sign — a young woman bearing a child named Immanuel — was meant to reassure Ahaz that the threat from Syria and northern Israel would pass within a few years. The child is a timeline marker: before he knows right from wrong, the enemy kings will be gone.",
+    "category": "original_context"
+  },
+  {
+    "id": "interp_later_isaiah7",
+    "passageId": "passage_child_sign",
+    "label": "Later Reuse: Virgin Birth Prophecy",
+    "summary": "Matthew 1:22-23 quotes the Greek Septuagint translation, which used 'parthenos' (virgin) instead of the Hebrew 'almah' (young woman). This translation shift transformed a political sign for Ahaz into a prediction of miraculous virgin conception. The original audience, crisis, and near-term timeline were left behind.",
+    "category": "later_reinterpretation"
+  },
+  {
+    "id": "interp_original_hosea11",
+    "passageId": "passage_out_of_egypt",
+    "label": "Original: Israel as God's Son",
+    "summary": "Hosea 11 is a poem about God's parental love for Israel. The 'son' is the nation: God called Israel out of Egypt in the Exodus. The following verses (11:2-4) describe Israel's unfaithfulness despite God's care. It is retrospective, not predictive.",
+    "category": "original_context"
+  },
+  {
+    "id": "interp_later_hosea11",
+    "passageId": "passage_out_of_egypt",
+    "label": "Later Reuse: Flight to Egypt",
+    "summary": "Matthew 2:15 applies this line to Jesus' family returning from Egypt after Herod's death. A backward-looking statement about the nation's history was reframed as a forward-looking prophecy about one child's travel itinerary.",
+    "category": "later_reinterpretation"
+  },
+  {
+    "id": "interp_original_psalm22",
+    "passageId": "passage_suffering_song",
+    "label": "Original: Personal Lament Psalm",
+    "summary": "Psalm 22 is a lament psalm — a prayer genre where the speaker describes distress in vivid, metaphorical language and then turns to praise. 'They pierce my hands and feet' uses the language of being hunted and surrounded. The psalm ends in deliverance and thanksgiving, not death.",
+    "category": "original_context"
+  },
+  {
+    "id": "interp_later_psalm22",
+    "passageId": "passage_suffering_song",
+    "label": "Later Reuse: Crucifixion Script",
+    "summary": "The Gospel writers used specific details from this psalm to narrate the crucifixion: the cry of abandonment, casting lots, mockery from bystanders. The poetic imagery was read as a literal prediction, and narrative details may have been shaped to match the psalm rather than the other way around.",
+    "category": "later_reinterpretation"
+  },
+  {
+    "id": "interp_original_micah5",
+    "passageId": "passage_small_town",
+    "label": "Original: Davidic Clan Origin",
+    "summary": "Micah names Bethlehem Ephrathah — a clan district, not just a town — as the ancestral root of a future Davidic ruler. The emphasis is on lineage and continuity with David's house, whose family originated from this area. It is about dynastic roots, not a birth announcement.",
+    "category": "original_context"
+  },
+  {
+    "id": "interp_later_micah5",
+    "passageId": "passage_small_town",
+    "label": "Later Reuse: Birthplace Requirement",
+    "summary": "Matthew 2:5-6 and the birth narratives treat this as requiring the Messiah to be physically born in Bethlehem. Notably, Mark and John show no knowledge of a Bethlehem birth, and Luke's census narrative (which gets the family to Bethlehem) has no historical corroboration.",
+    "category": "later_reinterpretation"
+  },
+  {
+    "id": "interp_original_daniel9",
+    "passageId": "passage_numbered_weeks",
+    "label": "Original: Maccabean Crisis",
+    "summary": "Most historians date Daniel's composition to around 165 BCE. The seventy weeks map onto known events: the decree to rebuild Jerusalem (538 BCE), the murder of the high priest Onias III ('anointed one cut off,' ~170 BCE), and the desecration of the temple by Antiochus IV Epiphanes (167 BCE).",
+    "category": "original_context"
+  },
+  {
+    "id": "interp_later_daniel9",
+    "passageId": "passage_numbered_weeks",
+    "label": "Later Reuse: Messianic Countdown",
+    "summary": "Christian interpreters recalculated the seventy weeks to end with Jesus, despite the arithmetic requiring creative adjustments. The 'anointed one cut off' was reassigned from Onias III to Jesus, detaching the timeline from the Maccabean events it was written to address.",
+    "category": "later_reinterpretation"
+  },
+  {
+    "id": "interp_original_isaiah9",
+    "passageId": "passage_royal_child",
+    "label": "Original: Royal Coronation Hymn",
+    "summary": "Isaiah 9:6-7 uses the language of enthronement. Ancient Near Eastern kings — Egyptian pharaohs and Assyrian monarchs alike — received divine throne names at coronation. The child 'born to us' is most likely Hezekiah, whose birth or coronation the hymn celebrates in royal convention.",
+    "category": "original_context"
+  },
+  {
+    "id": "interp_later_isaiah9",
+    "passageId": "passage_royal_child",
+    "label": "Later Reuse: Messianic Birth Announcement",
+    "summary": "Christian tradition reads this as a prophecy of Jesus' birth and divine nature. The throne names ('Mighty God,' 'Prince of Peace') are taken as literal descriptions rather than conventional royal titles, removing the text from its coronation context.",
+    "category": "later_reinterpretation"
+  },
+  {
+    "id": "interp_original_isaiah53",
+    "passageId": "passage_suffering_servant",
+    "label": "Original: Israel in Exile",
+    "summary": "The Servant Songs in Isaiah 40-55 repeatedly identify the servant as Israel (41:8, 44:1, 49:3). The suffering described in chapter 53 personifies the nation's experience of exile, humiliation, and eventual restoration. The servant suffers on behalf of the nations who oppressed him.",
+    "category": "original_context"
+  },
+  {
+    "id": "interp_later_isaiah53",
+    "passageId": "passage_suffering_servant",
+    "label": "Later Reuse: Atonement Theology",
+    "summary": "The early church applied the servant's suffering to Jesus' crucifixion, reading it as a prediction of substitutionary atonement. This required ignoring the explicit identification of the servant as Israel in the surrounding chapters and reading collective national imagery as individual biography.",
+    "category": "later_reinterpretation"
+  },
+  {
+    "id": "interp_original_jeremiah31",
+    "passageId": "passage_rachel_weeping",
+    "label": "Original: Babylonian Deportation",
+    "summary": "Rachel weeps at Ramah because the exiles are being marched past her traditional burial site on their way to Babylon. The very next verse (31:16-17) promises hope: 'They will return from the land of the enemy.' It is about exile and return, not about a future massacre.",
+    "category": "original_context"
+  },
+  {
+    "id": "interp_later_jeremiah31",
+    "passageId": "passage_rachel_weeping",
+    "label": "Later Reuse: Massacre of the Innocents",
+    "summary": "Matthew 2:17-18 applies Rachel's weeping to Herod's slaughter of children in Bethlehem. The promise of return in the next verse is ignored, and a poem about exile becomes a prophecy of infanticide — an event recorded in no other ancient source, including Josephus.",
+    "category": "later_reinterpretation"
+  }
+]

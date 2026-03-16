@@ -1,0 +1,469 @@
+[
+  {
+    "id": "level_001",
+    "title": "Ash Fragment",
+    "roomId": "hall_of_kings",
+    "puzzleType": "reconstruction",
+    "difficulty": 1,
+    "passageIds": [
+      "passage_suffering_song"
+    ],
+    "clueRewardIds": [
+      "clue_royal_voice"
+    ],
+    "rewardIds": [
+      "reward_scroll_fragment_01",
+      "reward_insight_03"
+    ],
+    "introDialogueId": "intro_01",
+    "config": {
+      "fragmentCount": 4,
+      "allowRotation": false,
+      "snapTolerance": 24
+    }
+  },
+  {
+    "id": "level_002",
+    "title": "Court Record",
+    "roomId": "hall_of_kings",
+    "puzzleType": "context_match",
+    "difficulty": 1,
+    "passageIds": [
+      "passage_royal_child"
+    ],
+    "clueRewardIds": [
+      "clue_historical_court"
+    ],
+    "rewardIds": [
+      "reward_key_01",
+      "reward_insight_03"
+    ],
+    "introDialogueId": "intro_04",
+    "config": {
+      "prompt": "What is the most likely original occasion for this text?",
+      "choices": [
+        {
+          "id": "coronation",
+          "label": "A royal coronation hymn for a Judean king"
+        },
+        {
+          "id": "future_birth",
+          "label": "A prediction of a future miraculous birth"
+        },
+        {
+          "id": "victory_song",
+          "label": "A victory celebration after battle"
+        }
+      ],
+      "correctChoiceId": "coronation"
+    }
+  },
+  {
+    "id": "level_003",
+    "title": "Broken Sign",
+    "roomId": "prophets_gallery",
+    "puzzleType": "reconstruction",
+    "difficulty": 2,
+    "passageIds": [
+      "passage_child_sign"
+    ],
+    "clueRewardIds": [
+      "clue_crisis_sign"
+    ],
+    "rewardIds": [
+      "reward_scroll_fragment_02",
+      "reward_insight_04"
+    ],
+    "introDialogueId": "intro_05",
+    "config": {
+      "fragmentCount": 5,
+      "allowRotation": true,
+      "snapTolerance": 22
+    }
+  },
+  {
+    "id": "level_004",
+    "title": "Year of the Siege",
+    "roomId": "prophets_gallery",
+    "puzzleType": "context_match",
+    "difficulty": 2,
+    "passageIds": [
+      "passage_child_sign"
+    ],
+    "clueRewardIds": [
+      "clue_near_term_context"
+    ],
+    "rewardIds": [
+      "reward_key_02",
+      "reward_insight_04"
+    ],
+    "introDialogueId": "intro_02",
+    "config": {
+      "prompt": "Who was the original audience for this sign?",
+      "choices": [
+        {
+          "id": "ahaz",
+          "label": "King Ahaz, facing invasion by Syria and northern Israel"
+        },
+        {
+          "id": "future_gen",
+          "label": "A future generation centuries later"
+        },
+        {
+          "id": "no_audience",
+          "label": "No specific audience — a timeless message"
+        }
+      ],
+      "correctChoiceId": "ahaz"
+    }
+  },
+  {
+    "id": "level_005",
+    "title": "Remembered Exodus",
+    "roomId": "exile_records",
+    "puzzleType": "context_match",
+    "difficulty": 2,
+    "passageIds": [
+      "passage_out_of_egypt"
+    ],
+    "clueRewardIds": [
+      "clue_collective_son"
+    ],
+    "rewardIds": [
+      "reward_scroll_fragment_02",
+      "reward_insight_05"
+    ],
+    "introDialogueId": "intro_06",
+    "config": {
+      "prompt": "In this passage, who is the 'son' called out of Egypt?",
+      "choices": [
+        {
+          "id": "nation",
+          "label": "The nation of Israel, recalled as God's child"
+        },
+        {
+          "id": "single_future",
+          "label": "A single future individual not yet born"
+        },
+        {
+          "id": "foreign_king",
+          "label": "A foreign king allied with Egypt"
+        }
+      ],
+      "correctChoiceId": "nation"
+    }
+  },
+  {
+    "id": "level_006",
+    "title": "Songs of Distress",
+    "roomId": "hall_of_kings",
+    "puzzleType": "genre",
+    "difficulty": 2,
+    "passageIds": [
+      "passage_suffering_song"
+    ],
+    "clueRewardIds": [
+      "clue_poetry_matters"
+    ],
+    "rewardIds": [
+      "reward_note_03",
+      "reward_insight_05"
+    ],
+    "introDialogueId": "intro_07",
+    "config": {
+      "candidateGenres": [
+        "lament_psalm",
+        "prophetic_oracle",
+        "historical_record"
+      ],
+      "correctGenre": "lament_psalm"
+    }
+  },
+  {
+    "id": "level_007",
+    "title": "Town on the Map",
+    "roomId": "prophets_gallery",
+    "puzzleType": "geography",
+    "difficulty": 3,
+    "passageIds": [
+      "passage_small_town"
+    ],
+    "clueRewardIds": [
+      "clue_small_town_symbolism"
+    ],
+    "rewardIds": [
+      "reward_note_02",
+      "reward_insight_06"
+    ],
+    "introDialogueId": "intro_08",
+    "config": {
+      "targetPlace": "bethlehem",
+      "candidatePlaces": [
+        "bethlehem",
+        "nazareth",
+        "jerusalem"
+      ]
+    }
+  },
+  {
+    "id": "level_008",
+    "title": "Numbered Weeks",
+    "roomId": "exile_records",
+    "puzzleType": "timeline",
+    "difficulty": 3,
+    "passageIds": [
+      "passage_numbered_weeks"
+    ],
+    "clueRewardIds": [
+      "clue_symbolic_timeline"
+    ],
+    "rewardIds": [
+      "reward_scroll_fragment_03",
+      "reward_insight_06"
+    ],
+    "introDialogueId": "intro_02",
+    "config": {
+      "events": [
+        "decree_to_restore",
+        "anointed_cut_off",
+        "temple_desolation"
+      ],
+      "correctOrder": [
+        "decree_to_restore",
+        "anointed_cut_off",
+        "temple_desolation"
+      ],
+      "showDateLabels": false
+    }
+  },
+  {
+    "id": "level_009",
+    "title": "Word Under Glass",
+    "roomId": "prophets_gallery",
+    "puzzleType": "translation",
+    "difficulty": 3,
+    "passageIds": [
+      "passage_child_sign"
+    ],
+    "clueRewardIds": [
+      "clue_translation_gap"
+    ],
+    "rewardIds": [
+      "reward_note_01",
+      "reward_insight_07"
+    ],
+    "introDialogueId": "intro_09",
+    "config": {
+      "sourceWord": "almah (עַלְמָה)",
+      "candidateTranslations": [
+        {
+          "id": "young_woman",
+          "label": "young woman"
+        },
+        {
+          "id": "virgin",
+          "label": "virgin"
+        },
+        {
+          "id": "queen",
+          "label": "queen"
+        }
+      ],
+      "correctTranslationId": "young_woman"
+    }
+  },
+  {
+    "id": "level_010",
+    "title": "The Board Reveals",
+    "roomId": "interpretation_wing",
+    "puzzleType": "investigation",
+    "difficulty": 4,
+    "passageIds": [
+      "passage_child_sign",
+      "passage_out_of_egypt",
+      "passage_suffering_song",
+      "passage_small_town",
+      "passage_numbered_weeks"
+    ],
+    "clueRewardIds": [
+      "clue_reuse_pattern"
+    ],
+    "rewardIds": [
+      "reward_insight_10"
+    ],
+    "introDialogueId": "reveal_01",
+    "config": {
+      "nodeIds": [
+        "clue_crisis_sign",
+        "clue_collective_son",
+        "clue_poetry_matters",
+        "clue_translation_gap"
+      ],
+      "validConnections": [
+        {
+          "pair": ["clue_crisis_sign", "clue_translation_gap"],
+          "insight": "Isaiah's sign to Ahaz was about an immediate crisis. The word 'almah' meant young woman. When translators chose 'virgin,' a political sign became a birth prophecy — and the original audience vanished."
+        },
+        {
+          "pair": ["clue_collective_son", "clue_poetry_matters"],
+          "insight": "Hosea's 'son' was Israel. The psalmist's suffering was poetry. Both used vivid figurative language about collective experience — later readers extracted individual predictions from communal texts."
+        },
+        {
+          "pair": ["clue_crisis_sign", "clue_collective_son"],
+          "insight": "In both cases, the original subject was a known entity — a king's sign, a nation's memory. The pattern: take a line addressed to someone specific, erase that someone, and insert a future figure."
+        }
+      ]
+    }
+  },
+  {
+    "id": "level_011",
+    "title": "Swords into Plowshares",
+    "roomId": "messianic_hall",
+    "puzzleType": "prophecy_check",
+    "difficulty": 3,
+    "passageIds": ["passage_world_peace"],
+    "clueRewardIds": ["clue_no_peace"],
+    "rewardIds": ["reward_scroll_fragment_04", "reward_insight_06"],
+    "introDialogueId": "intro_11",
+    "config": {
+      "requirement": "The messianic age brings the end of all war. Nations will disarm permanently.",
+      "evidence": [
+        { "id": "e1", "text": "Jesus taught 'Blessed are the peacemakers' and preached nonviolence.", "category": "supports" },
+        { "id": "e2", "text": "Jesus said 'I came not to bring peace but a sword' (Matthew 10:34).", "category": "contradicts" },
+        { "id": "e3", "text": "The Roman Empire fought constant wars during and after Jesus' lifetime.", "category": "contradicts" },
+        { "id": "e4", "text": "Christians launched the Crusades, the Thirty Years War, and countless other conflicts.", "category": "contradicts" },
+        { "id": "e5", "text": "Wars have continued uninterrupted for two thousand years.", "category": "contradicts" }
+      ]
+    }
+  },
+  {
+    "id": "level_012",
+    "title": "The Scattered Flock",
+    "roomId": "messianic_hall",
+    "puzzleType": "prophecy_check",
+    "difficulty": 3,
+    "passageIds": ["passage_gather_exiles"],
+    "clueRewardIds": ["clue_diaspora_continued"],
+    "rewardIds": ["reward_note_04", "reward_insight_06"],
+    "introDialogueId": "intro_12",
+    "config": {
+      "requirement": "The messiah will gather all Jewish exiles back to the land of Israel from every direction.",
+      "evidence": [
+        { "id": "e1", "text": "Jesus called twelve disciples, symbolically representing the twelve tribes.", "category": "supports" },
+        { "id": "e2", "text": "Jerusalem was destroyed by Rome in 70 CE, scattering the population further.", "category": "contradicts" },
+        { "id": "e3", "text": "The Jewish diaspora expanded across Europe, North Africa, and the Middle East.", "category": "contradicts" },
+        { "id": "e4", "text": "No physical ingathering of Jewish exiles occurred during or after Jesus' life.", "category": "contradicts" },
+        { "id": "e5", "text": "The modern state of Israel was established in 1948 — by secular Zionists, not a messiah.", "category": "contradicts" }
+      ]
+    }
+  },
+  {
+    "id": "level_013",
+    "title": "The Everlasting Sanctuary",
+    "roomId": "messianic_hall",
+    "puzzleType": "prophecy_check",
+    "difficulty": 3,
+    "passageIds": ["passage_eternal_temple"],
+    "clueRewardIds": ["clue_temple_destroyed"],
+    "rewardIds": ["reward_scroll_fragment_05", "reward_insight_07"],
+    "introDialogueId": "intro_13",
+    "config": {
+      "requirement": "God's sanctuary — the Temple in Jerusalem — will be established permanently and stand forever.",
+      "evidence": [
+        { "id": "e1", "text": "Jesus said 'Destroy this temple and in three days I will raise it up' (John 2:19).", "category": "supports" },
+        { "id": "e2", "text": "The Gospel of John clarifies Jesus meant his body, not the actual Temple.", "category": "contradicts" },
+        { "id": "e3", "text": "The Second Temple was destroyed by Roman forces in 70 CE.", "category": "contradicts" },
+        { "id": "e4", "text": "No third Temple has been built in two thousand years.", "category": "contradicts" },
+        { "id": "e5", "text": "Redefining 'temple' as a metaphor changes the prophecy rather than fulfilling it.", "category": "contradicts" }
+      ]
+    }
+  },
+  {
+    "id": "level_014",
+    "title": "All Shall Know",
+    "roomId": "messianic_hall",
+    "puzzleType": "prophecy_check",
+    "difficulty": 4,
+    "passageIds": ["passage_universal_knowledge"],
+    "clueRewardIds": ["clue_knowledge_unfulfilled"],
+    "rewardIds": ["reward_note_05", "reward_insight_07"],
+    "introDialogueId": "intro_10",
+    "config": {
+      "requirement": "Knowledge of God will cover the earth like water covers the sea — universal, self-evident, requiring no teachers.",
+      "evidence": [
+        { "id": "e1", "text": "Christianity became the largest world religion with over two billion adherents.", "category": "supports" },
+        { "id": "e2", "text": "Two-thirds of the world follows other religions or no religion at all.", "category": "contradicts" },
+        { "id": "e3", "text": "Christianity has fractured into over 40,000 denominations that disagree on core doctrines.", "category": "contradicts" },
+        { "id": "e4", "text": "The prophecy says no one will need to teach — yet Christianity relies on evangelism and instruction.", "category": "contradicts" },
+        { "id": "e5", "text": "Knowledge of God was supposed to be as obvious as water in the sea — self-evident, not debated.", "category": "contradicts" }
+      ]
+    }
+  },
+  {
+    "id": "level_015",
+    "title": "The Broken Line",
+    "roomId": "messianic_hall",
+    "puzzleType": "prophecy_check",
+    "difficulty": 4,
+    "passageIds": ["passage_davidic_branch"],
+    "clueRewardIds": ["clue_lineage_contradiction"],
+    "rewardIds": ["reward_insight_08"],
+    "introDialogueId": "intro_14",
+    "config": {
+      "requirement": "The messiah must be a biological descendant of King David through the paternal line.",
+      "evidence": [
+        { "id": "e1", "text": "Matthew traces a genealogy from David through Joseph to Jesus.", "category": "supports" },
+        { "id": "e2", "text": "Luke traces a different genealogy from David through Joseph to Jesus — the two lists contradict.", "category": "contradicts" },
+        { "id": "e3", "text": "Tribal identity in ancient Israel is determined by the biological father.", "category": "contradicts" },
+        { "id": "e4", "text": "The virgin birth doctrine means Joseph is not Jesus' biological father.", "category": "contradicts" },
+        { "id": "e5", "text": "If Joseph is not the biological father, his Davidic lineage cannot pass to Jesus — making both genealogies irrelevant.", "category": "contradicts" }
+      ]
+    }
+  },
+  {
+    "id": "level_016",
+    "title": "The Archive Complete",
+    "roomId": "interpretation_wing",
+    "puzzleType": "investigation",
+    "difficulty": 5,
+    "passageIds": [
+      "passage_child_sign",
+      "passage_out_of_egypt",
+      "passage_suffering_song",
+      "passage_small_town",
+      "passage_numbered_weeks",
+      "passage_world_peace",
+      "passage_davidic_branch"
+    ],
+    "clueRewardIds": [],
+    "rewardIds": ["reward_insight_15"],
+    "introDialogueId": "reveal_02",
+    "config": {
+      "nodeIds": [
+        "clue_reuse_pattern",
+        "clue_no_peace",
+        "clue_temple_destroyed",
+        "clue_lineage_contradiction",
+        "clue_diaspora_continued"
+      ],
+      "validConnections": [
+        {
+          "pair": ["clue_reuse_pattern", "clue_no_peace"],
+          "insight": "The NT reused old texts as prophecies — but the actual messianic requirement of world peace was never addressed. Reframing old lines is easier than ending war."
+        },
+        {
+          "pair": ["clue_reuse_pattern", "clue_lineage_contradiction"],
+          "insight": "The genealogies were constructed to claim Davidic descent — but the virgin birth, the central miracle claim, makes those very genealogies meaningless. The narrative contradicts itself."
+        },
+        {
+          "pair": ["clue_no_peace", "clue_temple_destroyed"],
+          "insight": "No peace. No temple. The two most visible, testable messianic requirements both went unfulfilled — not reinterpreted, simply unmet."
+        },
+        {
+          "pair": ["clue_diaspora_continued", "clue_temple_destroyed"],
+          "insight": "The exiles were not gathered — they were scattered further. The temple was not built — it was destroyed. The events after Jesus moved in the opposite direction from what the prophets required."
+        }
+      ]
+    }
+  }
+]

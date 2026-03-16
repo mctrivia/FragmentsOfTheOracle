@@ -1,10 +1,10 @@
-import levelsJson from '../../level_design_pack/data/levels.json';
-import passagesJson from '../../level_design_pack/data/passages.json';
-import cluesJson from '../../level_design_pack/data/clues.json';
-import archiveRoomsJson from '../../level_design_pack/data/archiveRooms.json';
-import dialogueJson from '../../level_design_pack/data/dialogue.json';
-import interpretationsJson from '../../level_design_pack/data/interpretations.json';
-import rewardsJson from '../../level_design_pack/data/rewards.json';
+import levelsJson from './levels.json';
+import passagesJson from './passages.json';
+import cluesJson from './clues.json';
+import archiveRoomsJson from './archiveRooms.json';
+import dialogueJson from './dialogue.json';
+import interpretationsJson from './interpretations.json';
+import rewardsJson from './rewards.json';
 
 import type {
   Level,

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "clue_royal_voice",
+    "type": "genre_note",
+    "title": "Royal Voice",
+    "body": "This text uses the conventions of psalmic poetry — vivid metaphor, parallelism, and a movement from lament to praise. It is written as prayer, not prediction."
+  },
+  {
+    "id": "clue_historical_court",
+    "type": "historical_note",
+    "title": "Throne Names",
+    "body": "The grand titles here follow ancient Near Eastern coronation convention. Egyptian and Assyrian kings received similar divine throne names at enthronement."
+  },
+  {
+    "id": "clue_crisis_sign",
+    "type": "historical_note",
+    "title": "Crisis Sign",
+    "body": "This sign was delivered during the Syro-Ephraimite crisis of 735 BCE, when Syria and northern Israel threatened to overthrow King Ahaz of Judah."
+  },
+  {
+    "id": "clue_near_term_context",
+    "type": "historical_note",
+    "title": "Near-Term Audience",
+    "body": "Isaiah names the specific kings involved and promises Ahaz the threat will pass before the child grows up — a timeline of a few years, not centuries."
+  },
+  {
+    "id": "clue_collective_son",
+    "type": "interpretation_note",
+    "title": "Collective Son",
+    "body": "Hosea consistently uses 'son' and 'child' as metaphors for the nation of Israel throughout this chapter. Verse 1 recalls the Exodus; the following verses describe Israel's unfaithfulness."
+  },
+  {
+    "id": "clue_poetry_matters",
+    "type": "genre_note",
+    "title": "Poetry, Not Prophecy",
+    "body": "Psalms of lament use vivid physical imagery to express distress. 'They pierce my hands' is poetic language for being surrounded by enemies, not a description of a future event."
+  },
+  {
+    "id": "clue_small_town_symbolism",
+    "type": "geography_note",
+    "title": "Clan, Not Birthplace",
+    "body": "'Bethlehem Ephrathah' names a clan district in Judah. The text says the ruler's origins come from there — emphasizing Davidic lineage, not requiring a literal birth in the town."
+  },
+  {
+    "id": "clue_symbolic_timeline",
+    "type": "interpretation_note",
+    "title": "Symbolic Numbers",
+    "body": "The seventy weeks align with known historical events from the decree of Cyrus (538 BCE) through the murder of the high priest Onias III to Antiochus IV's desecration of the temple in 167 BCE."
+  },
+  {
+    "id": "clue_translation_gap",
+    "type": "translation_note",
+    "title": "Almah to Parthenos",
+    "body": "The Hebrew 'almah' means 'young woman.' When translators produced the Greek Septuagint around 200 BCE, they chose 'parthenos' (virgin). Matthew quoted the Greek, not the Hebrew, changing the sign's meaning."
+  },
+  {
+    "id": "clue_reuse_pattern",
+    "type": "interpretation_note",
+    "title": "The Reuse Pattern",
+    "body": "A consistent pattern emerges: each passage had a specific original audience and context. Later readers lifted these lines, changed key words, and reapplied them to new events — creating 'prophecies' after the fact."
+  },
+  {
+    "id": "clue_no_peace",
+    "type": "fulfillment_check",
+    "title": "No Swords Were Beaten",
+    "body": "The messianic age requires the literal end of war. Two thousand years after Jesus, nations still wage war. The prophecy describes a visible, geopolitical transformation — not an inner feeling."
+  },
+  {
+    "id": "clue_diaspora_continued",
+    "type": "fulfillment_check",
+    "title": "The Scattering Deepened",
+    "body": "Instead of gathering the exiles, the events following Jesus led to the destruction of Jerusalem in 70 CE and the further scattering of the Jewish people across the Roman Empire and beyond."
+  },
+  {
+    "id": "clue_temple_destroyed",
+    "type": "fulfillment_check",
+    "title": "No Everlasting Sanctuary",
+    "body": "The Second Temple was destroyed within a generation of Jesus. The messiah was supposed to build or ensure an eternal Temple — not see it demolished. Reinterpreting 'temple' as a metaphor for the body sidesteps the original promise."
+  },
+  {
+    "id": "clue_knowledge_unfulfilled",
+    "type": "fulfillment_check",
+    "title": "The World Did Not Fill",
+    "body": "Universal knowledge of God — needing no teacher — has not arrived. Christianity itself has fractured into thousands of denominations that disagree on fundamental questions. The prophecy describes a world transformed beyond recognition."
+  },
+  {
+    "id": "clue_lineage_contradiction",
+    "type": "fulfillment_check",
+    "title": "The Line That Breaks Itself",
+    "body": "Tribal lineage in ancient Israel passes through the father. If Jesus was born of a virgin, Joseph is not his biological father, and the genealogies in Matthew and Luke — which already contradict each other — become irrelevant. The claim of Davidic descent defeats itself."
+  }
+]

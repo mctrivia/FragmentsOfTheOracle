@@ -1,0 +1,122 @@
+[
+  {
+    "id": "reward_scroll_fragment_01",
+    "type": "scroll_fragment",
+    "title": "Scroll Fragment",
+    "amount": 1
+  },
+  {
+    "id": "reward_scroll_fragment_02",
+    "type": "scroll_fragment",
+    "title": "Scroll Fragment",
+    "amount": 1
+  },
+  {
+    "id": "reward_scroll_fragment_03",
+    "type": "scroll_fragment",
+    "title": "Scroll Fragment",
+    "amount": 1
+  },
+  {
+    "id": "reward_key_01",
+    "type": "archive_key",
+    "title": "Archive Key",
+    "amount": 1
+  },
+  {
+    "id": "reward_key_02",
+    "type": "archive_key",
+    "title": "Archive Key",
+    "amount": 1
+  },
+  {
+    "id": "reward_note_01",
+    "type": "scholar_note",
+    "title": "Scholar Note",
+    "amount": 1
+  },
+  {
+    "id": "reward_note_02",
+    "type": "scholar_note",
+    "title": "Scholar Note",
+    "amount": 1
+  },
+  {
+    "id": "reward_note_03",
+    "type": "scholar_note",
+    "title": "Scholar Note",
+    "amount": 1
+  },
+  {
+    "id": "reward_insight_03",
+    "type": "insight_points",
+    "title": "Insight Points",
+    "amount": 3
+  },
+  {
+    "id": "reward_insight_04",
+    "type": "insight_points",
+    "title": "Insight Points",
+    "amount": 4
+  },
+  {
+    "id": "reward_insight_05",
+    "type": "insight_points",
+    "title": "Insight Points",
+    "amount": 5
+  },
+  {
+    "id": "reward_insight_06",
+    "type": "insight_points",
+    "title": "Insight Points",
+    "amount": 6
+  },
+  {
+    "id": "reward_insight_07",
+    "type": "insight_points",
+    "title": "Insight Points",
+    "amount": 7
+  },
+  {
+    "id": "reward_insight_10",
+    "type": "insight_points",
+    "title": "Insight Points",
+    "amount": 10
+  },
+  {
+    "id": "reward_scroll_fragment_04",
+    "type": "scroll_fragment",
+    "title": "Scroll Fragment",
+    "amount": 1
+  },
+  {
+    "id": "reward_scroll_fragment_05",
+    "type": "scroll_fragment",
+    "title": "Scroll Fragment",
+    "amount": 1
+  },
+  {
+    "id": "reward_note_04",
+    "type": "scholar_note",
+    "title": "Scholar Note",
+    "amount": 1
+  },
+  {
+    "id": "reward_note_05",
+    "type": "scholar_note",
+    "title": "Scholar Note",
+    "amount": 1
+  },
+  {
+    "id": "reward_insight_08",
+    "type": "insight_points",
+    "title": "Insight Points",
+    "amount": 8
+  },
+  {
+    "id": "reward_insight_15",
+    "type": "insight_points",
+    "title": "Insight Points",
+    "amount": 15
+  }
+]

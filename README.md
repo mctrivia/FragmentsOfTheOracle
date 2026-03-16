@@ -4,7 +4,11 @@ A mobile puzzle game about biblical messianic prophecies. Players work through a
 
 **Full disclosure: this is a 100% AI written app. It is an experiment to see what can be done with no code.**
 
-## How to Run
+## Play Now
+
+**[Play in your browser](https://mctrivia.github.io/FragmentsOfTheOracle/)** — no install required, works on desktop and mobile.
+
+## How to Run Locally
 
 ### Prerequisites
 

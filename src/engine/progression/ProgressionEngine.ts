@@ -37,8 +37,9 @@ export function isLevelPlayable(level: Level, save: SaveData): boolean {
     );
   }
 
-  // Other investigation / capstone levels require all other levels in their room completed
-  if (level.puzzleType === 'investigation') {
+  // Investigation / capstone levels require all other levels in their room completed
+  // (except level_010 which is the first investigation board and freely playable)
+  if (level.puzzleType === 'investigation' && level.id !== 'level_010') {
     const roomLevels = getLevelsForRoom(level.roomId);
     const otherLevels = roomLevels.filter((l) => l.id !== level.id);
     return otherLevels.every((l) => save.completedLevels.includes(l.id));

@@ -68,6 +68,18 @@ function DraggablePiece({ text, pieceIndex, rotation, onDrop }: DraggablePiecePr
   const [isDragging, setIsDragging] = useState(false);
   const onDropRef = useRef(onDrop);
   onDropRef.current = onDrop;
+  const viewRef = useRef<View>(null);
+
+  // On web, attach native touch listeners that call preventDefault to stop page scroll
+  useEffect(() => {
+    if (Platform.OS !== 'web' || !viewRef.current) return;
+    const el = viewRef.current as unknown as HTMLElement;
+    if (!el.addEventListener) return;
+
+    const prevent = (e: Event) => e.preventDefault();
+    el.addEventListener('touchmove', prevent, { passive: false });
+    return () => el.removeEventListener('touchmove', prevent);
+  }, []);
 
   const panResponder = useMemo(
     () =>
@@ -116,6 +128,7 @@ function DraggablePiece({ text, pieceIndex, rotation, onDrop }: DraggablePiecePr
 
   return (
     <Animated.View
+      ref={viewRef}
       {...panResponder.panHandlers}
       style={[
         styles.piece,
@@ -128,6 +141,7 @@ function DraggablePiece({ text, pieceIndex, rotation, onDrop }: DraggablePiecePr
           ],
           zIndex: isDragging ? 999 : 1,
           elevation: isDragging ? 12 : 3,
+          ...(Platform.OS === 'web' ? { touchAction: 'none' } : {}),
         },
       ]}
     >
